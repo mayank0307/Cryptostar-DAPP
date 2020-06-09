@@ -21,15 +21,15 @@ Starting migrations...
 1_initial_migration.js
 ======================
 
-   Deploying 'Migrations'
+   Replacing 'Migrations'
    ----------------------
-   > transaction hash:    0xbce3de59cb8a934a78f7d69a23646d64751a63de82dbf187b4f4902c10fb408e
+   > transaction hash:    0xf2b0a726be118eb1a51dd25fc814affd93abadd223eb91a8e485f4971ebb2dba
    > Blocks: 0            Seconds: 0
-   > contract address:    0x9d73B3b7aa8fC2e1213F225a9f99ad13FFAdF8F8
-   > block number:        1
-   > block timestamp:     1591710470
+   > contract address:    0x5F61204D91437181b9aB7E0A77b9d9072A8d7D44
+   > block number:        5
+   > block timestamp:     1591721958
    > account:             0x09E08B1888DD04C24814dE9881A31A2D0a799124
-   > balance:             99.99623034
+   > balance:             99.98701098
    > gas used:            188483 (0x2e043)
    > gas price:           20 gwei
    > value sent:          0 ETH
