@@ -332,27 +332,27 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.8+commit.0bbfe453\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"See https://eips.ethereum.org/EIPS/eip-721\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred.     * Only a single account can be approved at a time, so approving the zero address clears previous approvals.     * Requirements:     * - The caller must own the token or be an approved operator. - `tokenId` must exist.     * Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the number of tokens in ``owner``'s account.\"},\"getApproved(uint256)\":{\"details\":\"Returns the account approved for `tokenId` token.     * Requirements:     * - `tokenId` must exist.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns if the `operator` is allowed to manage all of the assets of `owner`.     * See {setApprovalForAll}\"},\"name()\":{\"details\":\"Returns the token collection name.\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the `tokenId` token.     * Requirements:     * - `tokenId` must exist.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked.     * Requirements:     * - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.     * Emits a {Transfer} event.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`.      * Requirements:      * - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.      * Emits a {Transfer} event.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller.     * Requirements:     * - The `operator` cannot be the caller.     * Emits an {ApprovalForAll} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created.     * This function call must use less than 30 000 gas.\"},\"symbol()\":{\"details\":\"Returns the token collection symbol.\"},\"tokenURI(uint256)\":{\"details\":\"Returns the Uniform Resource Identifier (URI) for `tokenId` token.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers `tokenId` token from `from` to `to`.     * WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible.     * Requirements:     * - `from`, `to` cannot be zero. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.     * Emits a {Transfer} event.\"}},\"title\":\"ERC-721 Non-Fungible Token Standard, optional metadata extension\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":\"IERC721Metadata\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0x9175561c374ec1fc33045e5dfdde2057e63e00debf432875f9e1e3395d99c149\",\"urls\":[\"bzz-raw://b0167043c1938b56904deaa481a73041aa4a9e054c60db0b0dfbebfe7869c06a\",\"dweb:/ipfs/QmUoYjhymBr6WUpExKgRvKxXD5fcdpQEe1o9ResKZu6CC5\"]},\"/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x708f339ccc3e9d164ec61bb0db7d4c224161a3bca52413c8bbeddb114154e52b\",\"urls\":[\"bzz-raw://1462c089d30cd75f9ce18c39a26f41adcb74e4a14d2cb9f5c8bcb0a8631fa660\",\"dweb:/ipfs/QmP9hGNkYTpRazqXnQoSyiUiL8DJr3Y8nX9Wcg7SukNMUf\"]},\"/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0x435bd9ac283c6678ac71c809bae5fb738ea2228b7cf8663ad111894d19f567cb\",\"urls\":[\"bzz-raw://01d79169830e56ab0980901b66d4b404db89acfafd5836903eadf0df22f8dcdd\",\"dweb:/ipfs/QmTTBj8GUZoMZ8EH7YyaV88QmD4QDg32vs2KNymdUKAoMd\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"See https://eips.ethereum.org/EIPS/eip-721\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the number of tokens in ``owner``'s account.\"},\"getApproved(uint256)\":{\"details\":\"Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}\"},\"name()\":{\"details\":\"Returns the token collection name.\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"},\"symbol()\":{\"details\":\"Returns the token collection symbol.\"},\"tokenURI(uint256)\":{\"details\":\"Returns the Uniform Resource Identifier (URI) for `tokenId` token.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.\"}},\"title\":\"ERC-721 Non-Fungible Token Standard, optional metadata extension\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":\"IERC721Metadata\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xfa152b6e88a1dc50780e8f1580426dc23ad2e1e2c2f086a088adf206a202f453\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5127b264994adab88fae419b1c493efc5acd07134c19ee5c0397e50018291ebf\",\"dweb:/ipfs/QmWwJZVhvdmvUCdimbb6R2Jiu59zjPqm6XTMchM6LaEHAp\"]},\"/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xbff8693dd68117a7662eed35ce4deb60786bbd9d621f36f92edb1b86a4578182\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b80fc44dffeb5d1f478440165be3ffad365f1746c8fa309f2cc899769e482f42\",\"dweb:/ipfs/QmXCCXHKDD5DwiNwxtp482ruc5S95fxM1wWS5i6bELuEf4\"]},\"/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xe7f984cedc00a138dc27f263c73c32ba9a4b2fd23b6c34ac46f46c074b943538\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0f4acda12f076fe7584921241ddbb5b460ca7cad6cb8a42252ac7f2a9f539127\",\"dweb:/ipfs/QmQmfhkEv9GrhdWe67QtXnU19AMuoEmy31QnHPkucdYLjZ\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "pragma solidity ^0.6.2;\n\nimport \"./IERC721.sol\";\n\n/**\n * @title ERC-721 Non-Fungible Token Standard, optional metadata extension\n * @dev See https://eips.ethereum.org/EIPS/eip-721\n */\ninterface IERC721Metadata is IERC721 {\n\n    /**\n     * @dev Returns the token collection name.\n     */\n    function name() external view returns (string memory);\n\n    /**\n     * @dev Returns the token collection symbol.\n     */\n    function symbol() external view returns (string memory);\n\n    /**\n     * @dev Returns the Uniform Resource Identifier (URI) for `tokenId` token.\n     */\n    function tokenURI(uint256 tokenId) external view returns (string memory);\n}\n",
-  "sourcePath": "F:\\Blockchain_Udacity_Project5\\node_modules\\openzeppelin-solidity\\contracts\\token\\ERC721\\IERC721Metadata.sol",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.6.2;\n\nimport \"./IERC721.sol\";\n\n/**\n * @title ERC-721 Non-Fungible Token Standard, optional metadata extension\n * @dev See https://eips.ethereum.org/EIPS/eip-721\n */\ninterface IERC721Metadata is IERC721 {\n\n    /**\n     * @dev Returns the token collection name.\n     */\n    function name() external view returns (string memory);\n\n    /**\n     * @dev Returns the token collection symbol.\n     */\n    function symbol() external view returns (string memory);\n\n    /**\n     * @dev Returns the Uniform Resource Identifier (URI) for `tokenId` token.\n     */\n    function tokenURI(uint256 tokenId) external view returns (string memory);\n}\n",
+  "sourcePath": "F:\\Mayank0307-udacity-cryptostar-ethereum-dapp\\node_modules\\openzeppelin-solidity\\contracts\\token\\ERC721\\IERC721Metadata.sol",
   "ast": {
-    "absolutePath": "/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol",
+    "absolutePath": "/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol",
     "exportedSymbols": {
       "IERC721Metadata": [
-        1724
+        1725
       ]
     },
-    "id": 1725,
-    "license": null,
+    "id": 1726,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1699,
+        "id": 1700,
         "literals": [
           "solidity",
           "^",
@@ -360,16 +360,16 @@
           ".2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:9"
+        "src": "33:23:9"
       },
       {
-        "absolutePath": "/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol",
+        "absolutePath": "/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol",
         "file": "./IERC721.sol",
-        "id": 1700,
+        "id": 1701,
         "nodeType": "ImportDirective",
-        "scope": 1725,
-        "sourceUnit": 1667,
-        "src": "25:23:9",
+        "scope": 1726,
+        "sourceUnit": 1668,
+        "src": "58:23:9",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -380,38 +380,38 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1702,
+              "id": 1703,
               "name": "IERC721",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1666,
-              "src": "213:7:9",
+              "referencedDeclaration": 1667,
+              "src": "246:7:9",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC721_$1666",
+                "typeIdentifier": "t_contract$_IERC721_$1667",
                 "typeString": "contract IERC721"
               }
             },
-            "id": 1703,
+            "id": 1704,
             "nodeType": "InheritanceSpecifier",
-            "src": "213:7:9"
+            "src": "246:7:9"
           }
         ],
         "contractDependencies": [
-          406,
-          1666
+          407,
+          1667
         ],
         "contractKind": "interface",
         "documentation": {
-          "id": 1701,
+          "id": 1702,
           "nodeType": "StructuredDocumentation",
-          "src": "50:133:9",
-          "text": "@title ERC-721 Non-Fungible Token Standard, optional metadata extension\n@dev See https://eips.ethereum.org/EIPS/eip-721"
+          "src": "83:133:9",
+          "text": " @title ERC-721 Non-Fungible Token Standard, optional metadata extension\n @dev See https://eips.ethereum.org/EIPS/eip-721"
         },
         "fullyImplemented": false,
-        "id": 1724,
+        "id": 1725,
         "linearizedBaseContracts": [
-          1724,
-          1666,
-          406
+          1725,
+          1667,
+          407
         ],
         "name": "IERC721Metadata",
         "nodeType": "ContractDefinition",
@@ -419,13 +419,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1704,
+              "id": 1705,
               "nodeType": "StructuredDocumentation",
-              "src": "228:58:9",
-              "text": "@dev Returns the token collection name."
+              "src": "261:58:9",
+              "text": " @dev Returns the token collection name."
             },
             "functionSelector": "06fdde03",
-            "id": 1709,
+            "id": 1710,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -433,24 +433,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1705,
+              "id": 1706,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "304:2:9"
+              "src": "337:2:9"
             },
             "returnParameters": {
-              "id": 1708,
+              "id": 1709,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1707,
+                  "id": 1708,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1709,
-                  "src": "330:13:9",
+                  "scope": 1710,
+                  "src": "363:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -458,10 +458,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1706,
+                    "id": 1707,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "330:6:9",
+                    "src": "363:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -471,10 +471,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "329:15:9"
+              "src": "362:15:9"
             },
-            "scope": 1724,
-            "src": "291:54:9",
+            "scope": 1725,
+            "src": "324:54:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -482,13 +482,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1710,
+              "id": 1711,
               "nodeType": "StructuredDocumentation",
-              "src": "351:60:9",
-              "text": "@dev Returns the token collection symbol."
+              "src": "384:60:9",
+              "text": " @dev Returns the token collection symbol."
             },
             "functionSelector": "95d89b41",
-            "id": 1715,
+            "id": 1716,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -496,24 +496,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1711,
+              "id": 1712,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "431:2:9"
+              "src": "464:2:9"
             },
             "returnParameters": {
-              "id": 1714,
+              "id": 1715,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1713,
+                  "id": 1714,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1715,
-                  "src": "457:13:9",
+                  "scope": 1716,
+                  "src": "490:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -521,10 +521,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1712,
+                    "id": 1713,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "457:6:9",
+                    "src": "490:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -534,10 +534,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "456:15:9"
+              "src": "489:15:9"
             },
-            "scope": 1724,
-            "src": "416:56:9",
+            "scope": 1725,
+            "src": "449:56:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -545,13 +545,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1716,
+              "id": 1717,
               "nodeType": "StructuredDocumentation",
-              "src": "478:90:9",
-              "text": "@dev Returns the Uniform Resource Identifier (URI) for `tokenId` token."
+              "src": "511:90:9",
+              "text": " @dev Returns the Uniform Resource Identifier (URI) for `tokenId` token."
             },
             "functionSelector": "c87b56dd",
-            "id": 1723,
+            "id": 1724,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -559,18 +559,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1719,
+              "id": 1720,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1718,
+                  "id": 1719,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1723,
-                  "src": "591:15:9",
+                  "scope": 1724,
+                  "src": "624:15:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -578,10 +578,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1717,
+                    "id": 1718,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "591:7:9",
+                    "src": "624:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -591,21 +591,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "590:17:9"
+              "src": "623:17:9"
             },
             "returnParameters": {
-              "id": 1722,
+              "id": 1723,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1721,
+                  "id": 1722,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1723,
-                  "src": "631:13:9",
+                  "scope": 1724,
+                  "src": "664:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -613,10 +613,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1720,
+                    "id": 1721,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "631:6:9",
+                    "src": "664:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -626,34 +626,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "630:15:9"
+              "src": "663:15:9"
             },
-            "scope": 1724,
-            "src": "573:73:9",
+            "scope": 1725,
+            "src": "606:73:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1725,
-        "src": "184:464:9"
+        "scope": 1726,
+        "src": "217:464:9"
       }
     ],
-    "src": "0:649:9"
+    "src": "33:649:9"
   },
   "legacyAST": {
-    "absolutePath": "/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol",
+    "absolutePath": "/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol",
     "exportedSymbols": {
       "IERC721Metadata": [
-        1724
+        1725
       ]
     },
-    "id": 1725,
-    "license": null,
+    "id": 1726,
+    "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1699,
+        "id": 1700,
         "literals": [
           "solidity",
           "^",
@@ -661,16 +661,16 @@
           ".2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:9"
+        "src": "33:23:9"
       },
       {
-        "absolutePath": "/F/Blockchain_Udacity_Project5/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol",
+        "absolutePath": "/F/Mayank0307-udacity-cryptostar-ethereum-dapp/node_modules/openzeppelin-solidity/contracts/token/ERC721/IERC721.sol",
         "file": "./IERC721.sol",
-        "id": 1700,
+        "id": 1701,
         "nodeType": "ImportDirective",
-        "scope": 1725,
-        "sourceUnit": 1667,
-        "src": "25:23:9",
+        "scope": 1726,
+        "sourceUnit": 1668,
+        "src": "58:23:9",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -681,38 +681,38 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1702,
+              "id": 1703,
               "name": "IERC721",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1666,
-              "src": "213:7:9",
+              "referencedDeclaration": 1667,
+              "src": "246:7:9",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IERC721_$1666",
+                "typeIdentifier": "t_contract$_IERC721_$1667",
                 "typeString": "contract IERC721"
               }
             },
-            "id": 1703,
+            "id": 1704,
             "nodeType": "InheritanceSpecifier",
-            "src": "213:7:9"
+            "src": "246:7:9"
           }
         ],
         "contractDependencies": [
-          406,
-          1666
+          407,
+          1667
         ],
         "contractKind": "interface",
         "documentation": {
-          "id": 1701,
+          "id": 1702,
           "nodeType": "StructuredDocumentation",
-          "src": "50:133:9",
-          "text": "@title ERC-721 Non-Fungible Token Standard, optional metadata extension\n@dev See https://eips.ethereum.org/EIPS/eip-721"
+          "src": "83:133:9",
+          "text": " @title ERC-721 Non-Fungible Token Standard, optional metadata extension\n @dev See https://eips.ethereum.org/EIPS/eip-721"
         },
         "fullyImplemented": false,
-        "id": 1724,
+        "id": 1725,
         "linearizedBaseContracts": [
-          1724,
-          1666,
-          406
+          1725,
+          1667,
+          407
         ],
         "name": "IERC721Metadata",
         "nodeType": "ContractDefinition",
@@ -720,13 +720,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1704,
+              "id": 1705,
               "nodeType": "StructuredDocumentation",
-              "src": "228:58:9",
-              "text": "@dev Returns the token collection name."
+              "src": "261:58:9",
+              "text": " @dev Returns the token collection name."
             },
             "functionSelector": "06fdde03",
-            "id": 1709,
+            "id": 1710,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -734,24 +734,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1705,
+              "id": 1706,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "304:2:9"
+              "src": "337:2:9"
             },
             "returnParameters": {
-              "id": 1708,
+              "id": 1709,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1707,
+                  "id": 1708,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1709,
-                  "src": "330:13:9",
+                  "scope": 1710,
+                  "src": "363:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -759,10 +759,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1706,
+                    "id": 1707,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "330:6:9",
+                    "src": "363:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -772,10 +772,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "329:15:9"
+              "src": "362:15:9"
             },
-            "scope": 1724,
-            "src": "291:54:9",
+            "scope": 1725,
+            "src": "324:54:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -783,13 +783,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1710,
+              "id": 1711,
               "nodeType": "StructuredDocumentation",
-              "src": "351:60:9",
-              "text": "@dev Returns the token collection symbol."
+              "src": "384:60:9",
+              "text": " @dev Returns the token collection symbol."
             },
             "functionSelector": "95d89b41",
-            "id": 1715,
+            "id": 1716,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -797,24 +797,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1711,
+              "id": 1712,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "431:2:9"
+              "src": "464:2:9"
             },
             "returnParameters": {
-              "id": 1714,
+              "id": 1715,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1713,
+                  "id": 1714,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1715,
-                  "src": "457:13:9",
+                  "scope": 1716,
+                  "src": "490:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -822,10 +822,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1712,
+                    "id": 1713,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "457:6:9",
+                    "src": "490:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -835,10 +835,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "456:15:9"
+              "src": "489:15:9"
             },
-            "scope": 1724,
-            "src": "416:56:9",
+            "scope": 1725,
+            "src": "449:56:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -846,13 +846,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1716,
+              "id": 1717,
               "nodeType": "StructuredDocumentation",
-              "src": "478:90:9",
-              "text": "@dev Returns the Uniform Resource Identifier (URI) for `tokenId` token."
+              "src": "511:90:9",
+              "text": " @dev Returns the Uniform Resource Identifier (URI) for `tokenId` token."
             },
             "functionSelector": "c87b56dd",
-            "id": 1723,
+            "id": 1724,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -860,18 +860,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1719,
+              "id": 1720,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1718,
+                  "id": 1719,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1723,
-                  "src": "591:15:9",
+                  "scope": 1724,
+                  "src": "624:15:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -879,10 +879,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1717,
+                    "id": 1718,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "591:7:9",
+                    "src": "624:7:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -892,21 +892,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "590:17:9"
+              "src": "623:17:9"
             },
             "returnParameters": {
-              "id": 1722,
+              "id": 1723,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1721,
+                  "id": 1722,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1723,
-                  "src": "631:13:9",
+                  "scope": 1724,
+                  "src": "664:13:9",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -914,10 +914,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1720,
+                    "id": 1721,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "631:6:9",
+                    "src": "664:6:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -927,60 +927,60 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "630:15:9"
+              "src": "663:15:9"
             },
-            "scope": 1724,
-            "src": "573:73:9",
+            "scope": 1725,
+            "src": "606:73:9",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 1725,
-        "src": "184:464:9"
+        "scope": 1726,
+        "src": "217:464:9"
       }
     ],
-    "src": "0:649:9"
+    "src": "33:649:9"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.6.8+commit.0bbfe453.Emscripten.clang"
+    "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-05-27T05:25:39.947Z",
+  "updatedAt": "2020-06-10T06:47:18.748Z",
   "devdoc": {
     "details": "See https://eips.ethereum.org/EIPS/eip-721",
     "methods": {
       "approve(address,uint256)": {
-        "details": "Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred.     * Only a single account can be approved at a time, so approving the zero address clears previous approvals.     * Requirements:     * - The caller must own the token or be an approved operator. - `tokenId` must exist.     * Emits an {Approval} event."
+        "details": "Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event."
       },
       "balanceOf(address)": {
         "details": "Returns the number of tokens in ``owner``'s account."
       },
       "getApproved(uint256)": {
-        "details": "Returns the account approved for `tokenId` token.     * Requirements:     * - `tokenId` must exist."
+        "details": "Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist."
       },
       "isApprovedForAll(address,address)": {
-        "details": "Returns if the `operator` is allowed to manage all of the assets of `owner`.     * See {setApprovalForAll}"
+        "details": "Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}"
       },
       "name()": {
         "details": "Returns the token collection name."
       },
       "ownerOf(uint256)": {
-        "details": "Returns the owner of the `tokenId` token.     * Requirements:     * - `tokenId` must exist."
+        "details": "Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist."
       },
       "safeTransferFrom(address,address,uint256)": {
-        "details": "Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked.     * Requirements:     * - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.     * Emits a {Transfer} event."
+        "details": "Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
       },
       "safeTransferFrom(address,address,uint256,bytes)": {
-        "details": "Safely transfers `tokenId` token from `from` to `to`.      * Requirements:      * - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer.      * Emits a {Transfer} event."
+        "details": "Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event."
       },
       "setApprovalForAll(address,bool)": {
-        "details": "Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller.     * Requirements:     * - The `operator` cannot be the caller.     * Emits an {ApprovalForAll} event."
+        "details": "Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event."
       },
       "supportsInterface(bytes4)": {
-        "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created.     * This function call must use less than 30 000 gas."
+        "details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
       },
       "symbol()": {
         "details": "Returns the token collection symbol."
@@ -989,7 +989,7 @@
         "details": "Returns the Uniform Resource Identifier (URI) for `tokenId` token."
       },
       "transferFrom(address,address,uint256)": {
-        "details": "Transfers `tokenId` token from `from` to `to`.     * WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible.     * Requirements:     * - `from`, `to` cannot be zero. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}.     * Emits a {Transfer} event."
+        "details": "Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from`, `to` cannot be zero. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event."
       }
     },
     "title": "ERC-721 Non-Fungible Token Standard, optional metadata extension"

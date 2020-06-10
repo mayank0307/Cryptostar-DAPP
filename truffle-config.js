@@ -24,7 +24,7 @@
 
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-const infuraKey = "7eb245842fcb41d895dd286cb02546c1";
+const infuraKey = "2b58bef087ff4627839d00e2c7ac0ea4";
 //
 // const fs = require('fs');
 const mnemonic = "skill repeat awful drink tennis local sing kid visa moon escape you";
