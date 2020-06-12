@@ -1,4 +1,4 @@
-pragma solidity >=0.6.0;
+pragma solidity >=0.5.0;
 
 //Importing openzeppelin-solidity ERC-721 implemented Standard
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol";
@@ -17,8 +17,8 @@ contract StarNotary is ERC721 {
     // name: Is a short name to your token
     // symbol: Is a short string like 'USD' -> 'American Dollar'
     
-    string public constant tokenName = "Crypto Star";
-    string public constant tokenSym = "CST";
+    string public constant tokenName = "Crypto Star Awsome";
+    string public constant tokenSym = "CSTA";
 
 
     // mapping the Star with Token Id
